@@ -14,11 +14,8 @@ import json
 #********************************************************************************************
 # Security Updates 
 #********************************************************************************************
-# Pat Token for GitHub
-token = "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" 
-
-# Retrieve the token from the environment variable
-#token = os.environ.get("GITHUB_PAT_TOKEN")
+# Pat Token for GitHub and Retrieve the token from the environment variable
+token = os.environ.get("GITHUB_PAT_TOKEN")
 
 if token is None:
     print("Error: GitHub PAT token not found in environment variable GITHUB_PAT_TOKEN")
